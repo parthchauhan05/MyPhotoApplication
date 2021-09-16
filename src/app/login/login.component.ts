@@ -9,7 +9,15 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
+  signInFormVisible = false
   ngOnInit(): void {
   }
 
+  makeSignInFormVisible() {
+    this.signInFormVisible = true
+  }
+
+  makeSignUpFormVisible() {
+    this.signInFormVisible = false
+  }
 }
